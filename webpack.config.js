@@ -1,9 +1,9 @@
 var HtmlWebpackPlugin = require('html-webpack-plugin');
-var HtmlWebpacPluginConfig = new HtmlWebpackPlugin({
+var HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
   template: __dirname + '/app/index.html', 
   filename: 'index.html',
   inject: 'body'
-})
+});
 
 module.exports = {
   entry: [
@@ -21,5 +21,5 @@ module.exports = {
     ]
   },
 
-  plugins: [HtmlWebpacPluginConfig]
+  plugins: [HtmlWebpackPluginConfig]
 }
